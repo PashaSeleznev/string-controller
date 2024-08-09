@@ -43,11 +43,42 @@ const CreateRowForm: FC<CreateRowFormProps> = ({id, setEditingRow}) => {
     return (
         <div className="row-create-form">
             <img className="row-tree-img" style={{marginRight: '180px'}} src="/src/images/tree-icon.png" />
-            <input type="text" style={{width: '639px'}} value={newRow.rowName} onChange = {(e) => setNewRow({...newRow, rowName: e.target.value})} onKeyDown={(e) => handleKeyCreate(e, id)}/>
-            <input type="number" style={{width: '176px', marginLeft: '12px'}} value={newRow.salary} onChange = {(e) => setNewRow({...newRow, salary: Number(e.target.value)})} onKeyDown={(e) => handleKeyCreate(e, id)}/>
-            <input type="number" style={{width: '176px', marginLeft: '12px'}} value={newRow.equipmentCosts} onChange = {(e) => setNewRow({...newRow, equipmentCosts: Number(e.target.value)})} onKeyDown={(e) => handleKeyCreate(e, id)}/>
-            <input type="number" style={{width: '176px', marginLeft: '12px'}} value={newRow.overheads} onChange = {(e) => setNewRow({...newRow, overheads: Number(e.target.value)})} onKeyDown={(e) => handleKeyCreate(e, id)}/>
-            <input type="number" style={{width: '176px', marginLeft: '12px', marginRight: '24px'}} value={newRow.estimatedProfit} onChange = {(e) => setNewRow({...newRow, estimatedProfit: Number(e.target.value)})} onKeyDown={(e) => handleKeyCreate(e, id)}/>
+            <input
+             type="text" 
+             style={{width: '639px'}} 
+             value={newRow.rowName} 
+             onChange = {(e) => setNewRow({...newRow, rowName: e.target.value})} 
+             onKeyDown={(e) => handleKeyCreate(e, id)}
+            />
+            <input
+             type="number" 
+             style={{width: '176px', 
+             marginLeft: '12px'}} 
+             value={newRow.salary} 
+             onChange = {(e) => setNewRow({...newRow, salary: Number(e.target.value)})} 
+             onKeyDown={(e) => handleKeyCreate(e, id)}
+            />
+            <input
+             type="number" 
+             style={{width: '176px', marginLeft: '12px'}} 
+             value={newRow.equipmentCosts} 
+             onChange = {(e) => setNewRow({...newRow, equipmentCosts: Number(e.target.value)})} 
+             onKeyDown={(e) => handleKeyCreate(e, id)}
+            />
+            <input 
+             type="number" 
+             style={{width: '176px', marginLeft: '12px'}} 
+             value={newRow.overheads} 
+             onChange = {(e) => setNewRow({...newRow, overheads: Number(e.target.value)})} 
+             onKeyDown={(e) => handleKeyCreate(e, id)}
+            />
+            <input
+             type="number" 
+             style={{width: '176px', marginLeft: '12px', marginRight: '24px'}} 
+             value={newRow.estimatedProfit} 
+             onChange = {(e) => setNewRow({...newRow, estimatedProfit: Number(e.target.value)})} 
+             onKeyDown={(e) => handleKeyCreate(e, id)}
+            />
         </div>
     )
 }
