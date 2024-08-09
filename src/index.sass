@@ -1,0 +1,179 @@
+body 
+	font-family: "Roboto", sans-serif 
+	width: 1920px 
+	margin: 0 
+	font-size: 14px 
+	font-weight: 400 
+	color: #FFFFFF 
+.header 
+	background-color: #27272A 
+.first-line 
+	display: flex 
+	padding-top: 10px 
+	height: 34px 
+	border-bottom: 1px solid #414144 
+.first-img 
+	height: 24px 
+	width: 24px 
+	margin-left: 20px 
+.first-text 
+	color: #A1A1AA 
+.first-text,
+.first-text-active 
+	height: 16px 
+	margin-left: 28px 
+	margin-top: 3px 
+.first-text-active 
+	padding: 0 3px 14px 3px 
+	width: 66px 
+	border-bottom: 2px solid #FFFFFF 
+.second-line 
+	display: flex 
+	height: 44px 
+	border-bottom: 1px solid #414144 
+.project-text 
+	padding-top: 8px 
+	margin: 0 62px 0 20px 
+.project-text,
+.abbrevetry-text 
+	color: #A1A1AA 
+.abbrevetry-text 
+	font-size: 10px 
+	margin: 0 117px 8px 20px 
+.second-img 
+	height: 24px 
+	width: 24px 
+	margin: 2px 7px 10px 0 
+.build-text 
+	font-size: 18px 
+	margin: 0 
+	padding: 11px 15px 12px 15px 
+	border-left: 1px solid #414144 
+	border-right: 1px solid #414144 
+.main 
+	display: flex 
+	height: 992px 
+.project-list 
+	width: 234px 
+	background-color: #27272A 
+	border-right: 1px solid #414144 
+	margin: 0 
+	padding: 0 
+.list-element,
+.list-element-active 
+	display: flex 
+	margin-top: 5px 
+	padding-left: 20px 
+.list-element-active 
+	background-color: #A1A1AA 
+.list-img 
+	height: 22px 
+	width: 22px 
+	margin-right: 14px 
+.element-text 
+	margin-top: 3px 
+	margin-bottom: 3px 
+	list-style: none 
+.main-field 
+	background-color: #202124 
+.row-features 
+	display: flex 
+	padding-top: 11px 
+	padding-left: 22px 
+	height: 31px 
+	color: #A1A1AA 
+.row-list 
+	width: 1686px 
+	position: relative 
+	padding-top: 28px 
+	margin: 0 
+	margin-left: 10px 
+	margin-right: 9px 
+	height: 90% 
+	background-image: linear-gradient(#414144 1px, transparent 1px) 
+	background-size: 100% 77px 
+	ul 
+		list-style: none 
+		padding: 0 
+		margin: 0 
+		li 
+			&::after 
+				content: '' 
+				position: absolute 
+				top: 12px 
+				left: 10px 
+				width: 6px 
+				height: 1px 
+				background-color: #C6C6C6 
+				z-index: 1 
+	li 
+		position: relative 
+		padding-left: 10px 
+		z-index: 0 
+	& > ul 
+		& > li 
+			&::after 
+				content: none 
+.row 
+	position: relative 
+	padding-left: 20px 
+	list-style: none 
+.has-children 
+	padding: 0 
+	&::before 
+		content: '' 
+		position: absolute 
+		top: 22px 
+		left: 10px 
+		width: 1px 
+		height: calc(var(--depth) * 110% + calc(var(--depth) - 1) * 17%) 
+		background-color: #C6C6C6 
+ul 
+	padding-left: 20px 
+	list-style-type: none 
+.row-buttons 
+	width: 55px 
+	height: 28px 
+	border-radius: 6px 
+	background-color: #414144 
+	cursor: pointer 
+	z-index: 2 
+.row-tree-img 
+	width: 24px 
+	height: 24px 
+	margin: 2px 0 2px 2px 
+	position: relative 
+.row-trash-img 
+	width: 16px 
+	height: 16px 
+	margin: 6px 7px 6px 6px 
+.row-info 
+	display: flex 
+	height: 60px 
+	margin-bottom: 16px 
+.row-data 
+	display: flex 
+	justify-content: flex-start 
+	margin-left: auto 
+	p 
+		height: 18px 
+.row-create-form,
+.row-update-form 
+	position: relative 
+	padding-left: 12px 
+	list-style: none 
+.row-update-form,
+.row-create-form 
+	position: relative 
+	display: flex 
+	justify-content: flex-start 
+	margin-left: auto 
+.row-update-form input,
+.row-create-form input 
+	background-color: #202124 
+	color: #71717A 
+	height: 16px 
+	transform: translateY(-8px) 
+	border-radius: 6px 
+	border: 1px solid #414144 
+	padding: 10px 0 10px 10px 
