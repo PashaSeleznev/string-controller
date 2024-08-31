@@ -20,6 +20,7 @@ export const fetchDataAction = () => {
         try {
           const response = await fetch('http://185.244.172.108:8081/v1/outlay-rows/entity/135130/row/list')
           const data: Rows = await response.json()
+          console.log(data)
           dispatch({type: 'FETCH_DATA_SUCCESS', payload: data})
         } catch(error) {
             dispatch({type: 'FETCH_DATA_FAILURE', payload: error})
